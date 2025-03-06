@@ -1,0 +1,22 @@
+﻿<Window x:Class="Busqueda.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Busqueda"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="10">
+            <Label Content="Ingrese un valor a buscar:"/>
+            <TextBox x:Name="txtValor" Width="100"/>
+            <Button x:Name="btnAgregar" Content="Agregar" Click="btnAgregar_Click"/>
+            <Button x:Name="btnBuscarCentinela" Content="Buscar con centinela" Click="btnBuscarCentinela_Click"/>
+            <Button x:Name="btnBuscarSinCentinela" Content="Buscar sin centinela" Click="btnBuscarSinCentinela_Click"/>
+            <Button x:Name="btnBuscarBinaria" Content="Busqueda Binaria" Click="btnBuscarBinaria_Click"/>
+            <ListBox x:Name="lstVectorDinamico" Margin="10" Height="100"/>
+            <Label x:Name="lblResultadoCentinela" Margin="10"/>
+            <Label x:Name="lblResultadoSinCentinela" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Window>
